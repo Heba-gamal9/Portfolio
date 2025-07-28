@@ -73,8 +73,7 @@ body {
 }
 
 header,
-section,
-footer {
+section {
     height: 100vh;
     padding: 40px 20px;
     display: flex;
@@ -96,6 +95,12 @@ section {
 footer {
     background-color: #d7ccc8;
     color: #3e2723;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .projects-container {
@@ -283,9 +288,6 @@ footer {
     margin-bottom: 10px;
 }
 
-
-/* Button */
-
 .btn {
     display: inline-block;
     padding: 8px 14px;
@@ -300,9 +302,6 @@ footer {
 .btn:hover {
     background-color: #f0f0f0;
 }
-
-
-/* Technologies List */
 
 .tech-list {
     list-style: none;
@@ -415,5 +414,13 @@ footer {
     }
     .card__content a {
         font-size: 0.95rem;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 10px;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px 10px;
     }
 }
